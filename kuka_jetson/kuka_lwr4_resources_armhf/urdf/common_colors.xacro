@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- RAL 1021 -->
+  <xacro:property name="color_kuka_orange"   value="0.91 0.443 0.031 1.0" />
+  <!-- RAL 9002 -->
+  <xacro:property name="color_kuka_silver"    value="0.8 0.8 0.8 1.0" />
+
+  <!-- approximations -->
+  <xacro:property name="color_kuka_black"    value="0.15 0.15 0.15 1.0" />
+
+</robot>

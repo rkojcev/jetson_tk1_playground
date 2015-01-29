@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find kuka_lwr4_resources_armhf)/urdf/common_materials.xacro"/>
+  <xacro:include filename="$(find kuka_lwr4_resources_armhf)/urdf/common_constants.xacro"/>
+
+  <xacro:macro name="kuka_lwr4" params="prefix">
+    <!-- link list -->
+    <link name="${prefix}base_link">
+      <visual>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/visual/base_link.dae" 
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:material_kuka_orange />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/collision/base_link.dae" 
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_1">
+      <visual>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/visual/link_1.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:material_kuka_orange />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/collision/link_1.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_2">
+      <visual>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/visual/link_2.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:material_kuka_orange />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/collision/link_2.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_3">
+      <visual>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/visual/link_3.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:material_kuka_orange />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/collision/link_3.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_4">
+      <visual>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/visual/link_4.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:material_kuka_orange />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/collision/link_4.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_5">
+      <visual>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/visual/link_5.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:material_kuka_orange />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/collision/link_5.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_6">
+      <visual>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/visual/link_6.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:material_kuka_silver />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/collision/link_6.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_7">
+      <visual>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/visual/link_7.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:material_kuka_black />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://kuka_lwr4_support_armhf/meshes/lwr4/collision/link_7.dae"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:material_kuka_black />
+      </collision>
+    </link>
+    <link name="${prefix}tool0"/>
+    <!-- end of link list -->
+
+    <!-- joints -->
+    <joint name="${prefix}joint_1" type="revolute">
+      <origin xyz="0 0 0.1105" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}link_1"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-2.967" upper="2.967" effort="200" velocity="1.963"/>
+    </joint>
+    <joint name="${prefix}joint_2" type="revolute">
+      <origin xyz="0.0 0 0.200" rpy="-1.57 0 0"/>
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="-0.524" upper="3.49" effort="200" velocity="1.963"/>
+    </joint>
+    <joint name="${prefix}joint_3" type="revolute">
+      <origin xyz="0 0 0.200" rpy="0 0 0"/>
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-2.967" upper="2.967" effort="100" velocity="1.963"/>
+    </joint>
+    <joint name="${prefix}joint_4" type="revolute">
+      <origin xyz="0 0 0.200" rpy="0 0 0"/>
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
+      <axis xyz="-1 0 0"/>
+      <limit lower="-2.094" upper="2.094" effort="100" velocity="1.963"/>
+    </joint>
+    <joint name="${prefix}joint_5" type="revolute">
+      <origin xyz="0 0 0.200" rpy="0 0 0"/>
+      <parent link="${prefix}link_4"/>
+      <child link="${prefix}link_5"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-2.967" upper="2.967" effort="100" velocity="3.141"/>
+    </joint>
+    <joint name="${prefix}joint_6" type="revolute">
+      <origin xyz="0 0 0.190" rpy="0 0 0"/>
+      <parent link="${prefix}link_5"/>
+      <child link="${prefix}link_6"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="-2.094" upper="2.094" effort="30" velocity="1.963"/>
+    </joint>
+    <joint name="${prefix}joint_7" type="revolute">
+      <origin xyz="0 0 0.068" rpy="0 0 0"/>
+      <parent link="${prefix}link_6"/>
+      <child link="${prefix}link_7"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-2.967" upper="2.967" effort="30" velocity="1.963"/>
+    </joint>
+    <joint name="${prefix}joint_7-tool0" type="fixed">
+      <origin xyz="0 0 0.01" rpy="0 -1.57 0" />
+      <parent link="${prefix}link_7"/>
+      <child link="${prefix}tool0"/>
+    </joint>
+
+    <!-- ROS base_link to KUKA World Coordinates transform -->
+<!--     <link name="${prefix}base" /> -->
+<!--     <joint name="${prefix}base_link-base" type="fixed">
+      <origin xyz="0 0 0.0" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}base"/>
+    </joint> -->
+  </xacro:macro>
+</robot>

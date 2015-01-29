@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find kuka_lwr4_resources_armhf)/urdf/common_colors.xacro"/>
+
+  <xacro:macro name="material_kuka_orange">
+    <material name="">
+      <color rgba="${color_kuka_orange}"/>
+    </material>
+  </xacro:macro>
+
+  <xacro:macro name="material_kuka_silver">
+    <material name="">
+      <color rgba="${color_kuka_silver}"/>
+    </material>
+  </xacro:macro>
+
+  <xacro:macro name="material_kuka_black">
+    <material name="">
+      <color rgba="${color_kuka_black}"/>
+    </material>
+  </xacro:macro>
+
+</robot>

@@ -1,0 +1,18 @@
+<!--
+  Manipulator specific version of 'robot_interface_streaming.launch'.
+
+  Defaults provided for kuka_lwr4:
+   - 7 joints
+
+  Usage:
+    robot_interface_streaming_kuka_lwr4.launch robot_ip:=<value>
+-->
+<launch>
+  <arg name="robot_ip" />
+
+  <rosparam command="load" file="$(find kuka_lwr4_support_armhf)/config/joint_names_lwr4.yaml" />
+
+  <include file="$(find motoman_driver)/launch/robot_interface_streaming.launch">
+    <arg name="robot_ip"   value="$(arg robot_ip)" />
+  </include>
+</launch>

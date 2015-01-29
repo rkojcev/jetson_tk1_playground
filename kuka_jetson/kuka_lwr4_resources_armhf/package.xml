@@ -1,0 +1,29 @@
+<package>
+  <name>kuka_lwr4_resources_armhf</name>
+  <version>0.2.0</version>
+  <description>
+    <p>
+      Shared configuration data, 3D models and launch files for KUKA LWR4+ 
+      manipulators.
+    </p>
+    <p>
+      This package contains configuration data, 3D models and launch files 
+      that are shared between different KUKA LWR4 robot support packages 
+      within the ROS Industrial program.
+
+    </p>
+  </description>
+  <author>Risto Kojcev (Center for MicroBio Robotics, Italian Institute of Technology)</author>
+  <maintainer email="rkojcev@gmail.com">Risto Kojcev (Center for MicroBio Robotics, Italian Institute of Technology)</maintainer>
+  <license>BSD</license>
+
+<!--   <url type="website">http://ros.org/wiki/fanuc_resources</url>
+  <url type="bugtracker">https://github.com/ros-industrial/fanuc/issues</url>
+  <url type="repository">https://github.com/ros-industrial/fanuc</url> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+    <architecture_independent />
+  </export>
+</package>
